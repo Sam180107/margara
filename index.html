@@ -233,7 +233,7 @@ footer b{font-family:var(--display);font-weight:400;font-size:clamp(2rem,9vw,3re
         <div class="meter"><div class="nums"><span><b id="mkTot">$0</b> de $450</span><span id="mkLeft"></span></div><div class="track"><i id="mkBar"></i></div></div>
       </div>
       <p class="lede">$50 por cabeza entre los 9, todo de Rio Market. Comida fácil para cocinar entre todos, la bebida para la semana y lo de la casa. Toca cada cosa para tacharla mientras compran.</p>
-      <h3>Lo que vamos a cocinar</h3>
+      <h3>Almuerzos de la semana</h3>
       <div class="menu" id="menu"></div>
       <div class="list" id="list"></div>
       <p class="mk-note"><span class="chip">Precios de Rio Market</span> Sacados de riomarket.com el 5 de noviembre, en dólares (REF). Las carnes, el queso y las verduras se cobran por peso, así que puede variar un poco.</p>
@@ -278,13 +278,13 @@ upd();
 
 const MENU=[
  ["Mar 8","Pasta a la boloñesa","var(--ink)"],
- ["Mié 9","Sándwiches de playa y perros calientes en la noche","var(--sea)"],
- ["Jue 10","Desayuno: arepas con huevo y queso","var(--sun)"],
+ ["Mié 9","Perros calientes","var(--sea)"],
+ ["Jue 10","Carne guisada con arroz","var(--sun)"],
  ["Vie 11","Pasta con atún y ensalada","var(--ink)"],
- ["Sáb 12","Sándwiches de jamón y queso, arepas de carne molida en la noche","var(--sea)"],
+ ["Sáb 12","Arepas rellenas de carne molida, jamón y queso","var(--sea)"],
  ["Dom 13","Pasta boloñesa otra vez","var(--coral)"],
- ["Lun 14","Arroz chino casero con salchicha y huevo","var(--sea)"],
- ["Mar 15","Desayuno: arepas con perico y queso","var(--ink)"]
+ ["Lun 14","Pasticho, lo trae Matthias","var(--sea)"],
+ ["Mar 15","Arepas con perico y queso antes de irnos","var(--ink)"]
 ];
 const AISLES=[
  ["Despensa",false,[
@@ -298,9 +298,10 @@ const AISLES=[
   ["Café molido JP","2 de 250 g",2.29,2],
   ["Ajo","200 g",1.87,1]]],
  ["Carnes, huevos y charcutería",false,[
-  ["Carne molida","3 kg",8.99,3],
-  ["Salchichas Viena Fiesta","4 paquetes de 450 g",4.52,4],
-  ["Pan de perro Bimbo","4 paquetes de 8",3.13,4],
+  ["Carne molida","2,5 kg",8.99,2.5],
+  ["Carne para guisar","2 kg",8.99,2],
+  ["Salchichas Viena Fiesta","3 paquetes de 450 g",4.52,3],
+  ["Pan de perro Bimbo","3 paquetes de 8",3.13,3],
   ["Salsa de tomate Kiero","397 g",1.75,1],
   ["Huevos","2 cartones de 30",6.19,2],
   ["Queso blanco Don Armando","1 kg",13.45,1],
@@ -319,10 +320,9 @@ const AISLES=[
   ["Cerveza Polar Pilsen","72 latas de 355 ml",1.22,72],
   ["Pepsi y 7Up","8 de 2 litros",1.35,8],
   ["Agua Nevada","4 botellones de 5 litros",5.02,4],
-  ["Hielo Poiso","5 bolsas grandes de 5 kg",2.17,5]]],
+  ["Hielo Poiso","4 bolsas grandes de 5 kg",2.17,4]]],
  ["Picar y la casa",false,[
   ["Pepito XXL","1 bolsa de 180 g",3.33,1],
-  ["Doritos","1 bolsa de 150 g",3.61,1],
   ["Vasos plásticos Zupla","50 unidades",6.67,1],
   ["Platos plásticos Zipsi","25 unidades",8.72,1],
   ["Servilletas Caricias","120 unidades",2.24,1],
